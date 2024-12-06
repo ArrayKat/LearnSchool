@@ -1,0 +1,51 @@
+-- Таблица гендеров
+create table genders(
+	code SERIAL primary key,
+	name VARCHAR(50) not null 	
+);
+
+-- Таблица сервисов
+create table services(
+	id SERIAL PRIMARY KEY,
+    title VARCHAR(100) NOT null,
+    cost FLOAT NOT null,
+    duration_in_seconds INT not null,
+    description VARCHAR(100),
+    discount FLOAT,
+    main_image_path VARCHAR(100)
+);
+-- Таблица фото сервисов
+create table service_photo(
+	id SERIAL primary key,
+	service_id INT references services(id) on delete set null on update cascade,
+	photo_path VARCHAR(100) not null 	
+);
+
+-- Таблица клиентов
+CREATE TABLE clients (
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(100) NOT null,
+    last_name VARCHAR(100) NOT null,
+    patronymic VARCHAR(100) NOT null,
+    birthday timestamp,
+    registration_date timestamp not null,
+    email VARCHAR(100),
+    phone VARCHAR(100) not null,
+    photo_path VARCHAR(100),
+    gender_code INT REFERENCES genders(code) ON DELETE SET NULL ON UPDATE CASCADE
+);
+
+-- Таблица связи клиентов и сервисов
+create table client_service(
+id SERIAL PRIMARY KEY,
+    client_id INT REFERENCES clients(id) ON DELETE SET NULL ON UPDATE cascade,
+    service_id INT REFERENCES services(id) ON DELETE SET NULL ON UPDATE cascade,
+    start_time timestamp not null,
+    comment VARCHAR(100) not null
+);
+
+drop table if exists client_service cascade;
+drop table if exists clients cascade;
+drop table if exists genders cascade;
+drop table if exists service_photo cascade;
+drop table if exists services cascade;

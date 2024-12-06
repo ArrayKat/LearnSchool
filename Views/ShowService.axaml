@@ -1,0 +1,58 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LernSchool.ShowService"
+			 xmlns:vm="using:LernSchool.ViewModels"
+			 x:DataType="vm:ShowServiceVM">
+
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="8*"/>
+		</Grid.RowDefinitions>
+		<StackPanel Margin="10 0" Grid.Row="0" Orientation="Horizontal">
+			
+		</StackPanel>
+
+		<ListBox Grid.Row="1" ItemsSource="{Binding ListServices}" SelectionMode="Single" >
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Border BorderBrush="Blue" BorderThickness="2">
+						<StackPanel>
+							<Grid Margin="15">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*"/>
+									<!-- Первая колонка для личной информации -->
+									<ColumnDefinition Width="2*"/>
+									<!-- Вторая колонка для курсов и предметов -->
+								</Grid.ColumnDefinitions>
+
+								
+								<StackPanel Grid.Column="0" Orientation="Vertical" >
+									<StackPanel Orientation="Horizontal">
+										<!-- Картинка -->
+										<Image Source="/Assets/avalonia-logo.ico"/>
+									</StackPanel>
+								</StackPanel>
+								<StackPanel Grid.Column="1" Orientation="Vertical">
+									<StackPanel Orientation="Horizontal">
+										<!-- Зачеркнутый текст -->
+										<TextBlock Text="{Binding Title}"/>
+										<TextBlock Text="{Binding Title}"/>
+										
+									</StackPanel>
+								</StackPanel>
+
+							</Grid>
+						</StackPanel>
+					</Border>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+
+	</Grid>
+	
+</UserControl>
