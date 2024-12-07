@@ -1,0 +1,94 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katty\\desktop\\avalonia\\learnschool\\views\\addchangeservices.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:views\\addchangeservices.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katty\\desktop\\avalonia\\learnschool\\viewmodels\\addchangeservicesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:viewmodels\\addchangeservicesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katty\\desktop\\avalonia\\learnschool\\views\\showservice.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:views\\showservice.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katty\\desktop\\avalonia\\learnschool\\models\\particalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:models\\particalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddChangeServices.axaml",
+              "DocumentMoniker": "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\Views\\AddChangeServices.axaml",
+              "RelativeDocumentMoniker": "Views\\AddChangeServices.axaml",
+              "ToolTip": "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\Views\\AddChangeServices.axaml",
+              "RelativeToolTip": "Views\\AddChangeServices.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-07T12:42:43.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddChangeServicesVM.cs",
+              "DocumentMoniker": "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\ViewModels\\AddChangeServicesVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AddChangeServicesVM.cs",
+              "ToolTip": "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\ViewModels\\AddChangeServicesVM.cs",
+              "RelativeToolTip": "ViewModels\\AddChangeServicesVM.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T12:43:40.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ParticalService.cs",
+              "DocumentMoniker": "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\Models\\ParticalService.cs",
+              "RelativeDocumentMoniker": "Models\\ParticalService.cs",
+              "ToolTip": "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\Models\\ParticalService.cs",
+              "RelativeToolTip": "Models\\ParticalService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T13:24:53.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShowService.axaml",
+              "DocumentMoniker": "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\Views\\ShowService.axaml",
+              "RelativeDocumentMoniker": "Views\\ShowService.axaml",
+              "ToolTip": "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\Views\\ShowService.axaml",
+              "RelativeToolTip": "Views\\ShowService.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-07T13:28:03.691Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

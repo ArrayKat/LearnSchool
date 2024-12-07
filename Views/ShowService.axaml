@@ -34,20 +34,32 @@
 								<StackPanel Grid.Column="0" Orientation="Vertical" >
 									<StackPanel Orientation="Horizontal">
 										<!-- Картинка -->
-										<Image Source="/Assets/avalonia-logo.ico"/>
+										<Image Height ="150" Source="/Assets/Услуги_школы/Китайский_язык.jpg"/>
 									</StackPanel>
 								</StackPanel>
 								<StackPanel Grid.Column="1" Orientation="Vertical">
+									<TextBlock FontSize="15" Text="{Binding Title}"/>
 									<StackPanel Orientation="Horizontal">
-										<!-- Зачеркнутый текст -->
-										<TextBlock Text="{Binding Title}"/>
-										<TextBlock Text="{Binding Title}"/>
-										
+										<TextBlock Text="{Binding Cost}" IsVisible="{Binding isVisibleMainCost}" TextDecorations="Strikethrough"/>
+										<TextBlock>
+											<TextBlock.Text>
+												<MultiBinding StringFormat="{} {0} рублей за {1} минут">
+													<Binding Path="CostResult"/>
+													<Binding Path="DurationInMinutes"/>
+												</MultiBinding>
+											</TextBlock.Text>
+										</TextBlock>										
 									</StackPanel>
+									
 								</StackPanel>
-
+								<StackPanel Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Bottom">
+									<Button Command="{Binding $parent[UserControl].((vm:ShowServiceVM)DataContext).ChangeService}" CommandParameter="{Binding Id}" Content="Редактировать" Margin="5"/>
+									<Button Command="{Binding $parent[UserControl].((vm:ShowServiceVM)DataContext).DeleteService}" CommandParameter="{Binding Id}" Content="Удалить" Margin="5"/>
+								</StackPanel>
 							</Grid>
+							
 						</StackPanel>
+						
 					</Border>
 				</DataTemplate>
 			</ListBox.ItemTemplate>

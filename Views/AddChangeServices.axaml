@@ -1,0 +1,23 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LernSchool.AddChangeServices"
+			 xmlns:vm ="using:LernSchool.ViewModels"
+			 x:DataType="vm:AddChangeServicesVM">
+
+	<StackPanel>
+		<Button Command="{Binding ToBackPage}"/>
+		<TextBlock Text="{Binding CurrentService.Title}"/>
+		<TextBlock Text="{Binding CurrentService.DurationInMinutes}"/>
+		<TextBlock Text="{Binding CurrentService.Cost}"/>
+		<TextBlock Text="{Binding CurrentService.Description}"/>
+		<TextBlock Text="{Binding CurrentService.DiscountInt}"/>
+	
+	
+	
+	</StackPanel>
+	
+	
+</UserControl>

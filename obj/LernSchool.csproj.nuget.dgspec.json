@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\колиниченкоес\\source\\repos\\LernSchool\\LernSchool\\LernSchool.csproj": {}
+    "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\LernSchool.csproj": {}
   },
   "projects": {
-    "C:\\Users\\колиниченкоес\\source\\repos\\LernSchool\\LernSchool\\LernSchool.csproj": {
+    "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\LernSchool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\колиниченкоес\\source\\repos\\LernSchool\\LernSchool\\LernSchool.csproj",
+        "projectUniqueName": "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\LernSchool.csproj",
         "projectName": "LernSchool",
-        "projectPath": "C:\\Users\\колиниченкоес\\source\\repos\\LernSchool\\LernSchool\\LernSchool.csproj",
-        "packagesPath": "C:\\Users\\колиниченкоес\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\колиниченкоес\\source\\repos\\LernSchool\\LernSchool\\obj\\",
+        "projectPath": "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\LernSchool.csproj",
+        "packagesPath": "C:\\Users\\Katty\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Katty\\Desktop\\avalonia\\LearnSchool\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\колиниченкоес\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Katty\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,6 +69,10 @@
               "target": "Package",
               "version": "[11.1.0, )"
             },
+            "MessageBox.Avalonia": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -101,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
