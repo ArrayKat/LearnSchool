@@ -23,18 +23,18 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LernSchool
-build_property.ProjectDir = C:\Users\Katty\Desktop\avalonia\LearnSchool\
+build_property.ProjectDir = C:\Users\колиниченкоес\source\repos\LearnSchool\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/Katty/Desktop/avalonia/LearnSchool/App.axaml]
+[C:/Users/колиниченкоес/source/repos/LearnSchool/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Katty/Desktop/avalonia/LearnSchool/Views/AddChangeServices.axaml]
+[C:/Users/колиниченкоес/source/repos/LearnSchool/Views/AddChangeServices.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Katty/Desktop/avalonia/LearnSchool/Views/MainWindow.axaml]
+[C:/Users/колиниченкоес/source/repos/LearnSchool/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Katty/Desktop/avalonia/LearnSchool/Views/ShowService.axaml]
+[C:/Users/колиниченкоес/source/repos/LearnSchool/Views/ShowService.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

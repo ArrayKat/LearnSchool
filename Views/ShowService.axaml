@@ -10,17 +10,42 @@
 
 	<Grid>
 		<Grid.RowDefinitions>
-			<RowDefinition Height="*"/>
+			<RowDefinition Height="0.7*"/>
 			<RowDefinition Height="8*"/>
 		</Grid.RowDefinitions>
 		<StackPanel Margin="10 0" Grid.Row="0" Orientation="Horizontal">
 			
 		</StackPanel>
+		<StackPanel Margin="10 0" Grid.Row="0" Orientation="Vertical">
+			
+			<StackPanel Orientation="Horizontal">
+				<Button IsVisible="{Binding IsVisibleAdmin}" Margin="5 0" Content="Добавить услугу"/>
+				<TextBox  Text="{Binding SearchNameDesc}" Watermark="Введите название услуги"  Margin="10" FontSize="12"/>
+				<ComboBox  Margin="5 10" SelectedIndex="{Binding SortCostIndex}">
+					<ComboBoxItem>Без сортировки стоимости</ComboBoxItem>
+					<ComboBoxItem>По стоимости по возрастанию</ComboBoxItem>
+					<ComboBoxItem>По стоимости по убыванию</ComboBoxItem>
+				</ComboBox>
+				<ComboBox Margin="5 10" SelectedIndex="{Binding FilterDiscountIndex}">
+					<ComboBoxItem>Без скидки</ComboBoxItem>
+					<ComboBoxItem>0%-5% скидка</ComboBoxItem>
+					<ComboBoxItem>5%-15% скидка</ComboBoxItem>
+					<ComboBoxItem>15%-30% скидка</ComboBoxItem>
+					<ComboBoxItem>30%-70% скидка</ComboBoxItem>
+					<ComboBoxItem>70%-100% скидка</ComboBoxItem>
+				</ComboBox>
+				<StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+					<TextBox Text="{Binding AdminCode}" Watermark="Код администратора"  Margin="10" FontSize="12" />
+					<Button Command="{Binding CheckAdmin}"  Margin="5 0" Content="Проверить"/>
+				</StackPanel>
+				
+			</StackPanel>
 
+		</StackPanel>
 		<ListBox Grid.Row="1" ItemsSource="{Binding ListServices}" SelectionMode="Single" >
 			<ListBox.ItemTemplate>
 				<DataTemplate>
-					<Border BorderBrush="Blue" BorderThickness="2">
+					<Border BorderBrush="Blue" BorderThickness="2" Background="{Binding BackgroundColor}">
 						<StackPanel>
 							<Grid Margin="15">
 								<Grid.ColumnDefinitions>
@@ -29,7 +54,7 @@
 									<ColumnDefinition Width="2*"/>
 									<!-- Вторая колонка для курсов и предметов -->
 								</Grid.ColumnDefinitions>
-
+								
 								
 								<StackPanel Grid.Column="0" Orientation="Vertical" >
 									<StackPanel Orientation="Horizontal">
@@ -48,13 +73,20 @@
 													<Binding Path="DurationInMinutes"/>
 												</MultiBinding>
 											</TextBlock.Text>
-										</TextBlock>										
+										</TextBlock>	
+										
 									</StackPanel>
-									
+									<TextBlock IsVisible="{Binding isVisibleMainCost}">
+										<TextBlock.Text>
+											<MultiBinding StringFormat="{}* Скидка {0}%">
+												<Binding Path="DiscountInt"/>
+											</MultiBinding>
+										</TextBlock.Text>
+									</TextBlock>
 								</StackPanel>
 								<StackPanel Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Bottom">
-									<Button Command="{Binding $parent[UserControl].((vm:ShowServiceVM)DataContext).ChangeService}" CommandParameter="{Binding Id}" Content="Редактировать" Margin="5"/>
-									<Button Command="{Binding $parent[UserControl].((vm:ShowServiceVM)DataContext).DeleteService}" CommandParameter="{Binding Id}" Content="Удалить" Margin="5"/>
+									<Button  Command="{Binding $parent[UserControl].((vm:ShowServiceVM)DataContext).ChangeService}" CommandParameter="{Binding Id}" Content="Редактировать" Margin="5"/>
+									<Button  Command="{Binding $parent[UserControl].((vm:ShowServiceVM)DataContext).DeleteService}" CommandParameter="{Binding Id}" Content="Удалить" Margin="5"/>
 								</StackPanel>
 							</Grid>
 							

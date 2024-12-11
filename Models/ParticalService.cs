@@ -15,6 +15,6 @@ namespace LernSchool.Models
         public int DurationInMinutes => DurationInSeconds / 60;
 
         public int DiscountInt => (int)(Discount !=null ? Discount * 100 : 0);
-
+        public string BackgroundColor => Discount == null ? "#FFFFFF" : "#E7FABF";
     }
 }
