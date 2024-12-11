@@ -12,14 +12,13 @@
 		<Grid.RowDefinitions>
 			<RowDefinition Height="0.7*"/>
 			<RowDefinition Height="8*"/>
+			<RowDefinition Height="0.5*"/>
 		</Grid.RowDefinitions>
-		<StackPanel Margin="10 0" Grid.Row="0" Orientation="Horizontal">
-			
-		</StackPanel>
+		
 		<StackPanel Margin="10 0" Grid.Row="0" Orientation="Vertical">
 			
 			<StackPanel Orientation="Horizontal">
-				<Button IsVisible="{Binding IsVisibleAdmin}" Margin="5 0" Content="Добавить услугу"/>
+				<Button IsVisible="{Binding IsVisibleAdmin}" Margin="5 0" Content="Добавить услугу" Command="{Binding AddService}"/>
 				<TextBox  Text="{Binding SearchNameDesc}" Watermark="Введите название услуги"  Margin="10" FontSize="12"/>
 				<ComboBox  Margin="5 10" SelectedIndex="{Binding SortCostIndex}">
 					<ComboBoxItem>Без сортировки стоимости</ComboBoxItem>
@@ -84,10 +83,11 @@
 										</TextBlock.Text>
 									</TextBlock>
 								</StackPanel>
-								<StackPanel Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Bottom">
+								<StackPanel IsVisible="{Binding $parent[UserControl].((vm:ShowServiceVM)DataContext).IsVisibleAdmin}" Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Bottom">
 									<Button  Command="{Binding $parent[UserControl].((vm:ShowServiceVM)DataContext).ChangeService}" CommandParameter="{Binding Id}" Content="Редактировать" Margin="5"/>
-									<Button  Command="{Binding $parent[UserControl].((vm:ShowServiceVM)DataContext).DeleteService}" CommandParameter="{Binding Id}" Content="Удалить" Margin="5"/>
+									<Button Command="{Binding $parent[UserControl].((vm:ShowServiceVM)DataContext).DeleteService}" CommandParameter="{Binding Id}" Content="Удалить" Margin="5"/>
 								</StackPanel>
+									
 							</Grid>
 							
 						</StackPanel>
@@ -96,7 +96,16 @@
 				</DataTemplate>
 			</ListBox.ItemTemplate>
 		</ListBox>
-
+		<StackPanel Margin="10 0" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+			<TextBlock>
+				<TextBlock.Text>
+					<MultiBinding StringFormat="{} {0} из {1}">
+						<Binding Path="CountListServices"/>
+						<Binding Path="CountAllServices"/>
+					</MultiBinding>
+				</TextBlock.Text>
+			</TextBlock>
+		</StackPanel>
 	</Grid>
 	
 </UserControl>

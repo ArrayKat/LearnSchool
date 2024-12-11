@@ -356,10 +356,10 @@
           }
         }
       },
-      "ColorTextBlock.Avalonia/11.0.0-d1": {
+      "ColorTextBlock.Avalonia/11.0.2": {
         "type": "package",
         "dependencies": {
-          "Avalonia": "11.0.0-rc1.1"
+          "Avalonia": "11.0.0"
         },
         "compile": {
           "lib/net6.0/ColorTextBlock.Avalonia.dll": {}
@@ -368,10 +368,10 @@
           "lib/net6.0/ColorTextBlock.Avalonia.dll": {}
         }
       },
-      "DialogHost.Avalonia/0.7.5": {
+      "DialogHost.Avalonia/0.7.7": {
         "type": "package",
         "dependencies": {
-          "Avalonia": "11.0.0-rc2.1",
+          "Avalonia": "11.0.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -512,11 +512,11 @@
           }
         }
       },
-      "Markdown.Avalonia.Tight/11.0.0-d1": {
+      "Markdown.Avalonia.Tight/11.0.2": {
         "type": "package",
         "dependencies": {
-          "Avalonia": "11.0.0-rc1.1",
-          "ColorTextBlock.Avalonia": "11.0.0-d1"
+          "Avalonia": "11.0.0",
+          "ColorTextBlock.Avalonia": "11.0.2"
         },
         "compile": {
           "lib/net6.0/Markdown.Avalonia.dll": {}
@@ -525,12 +525,12 @@
           "lib/net6.0/Markdown.Avalonia.dll": {}
         }
       },
-      "MessageBox.Avalonia/3.0.0": {
+      "MessageBox.Avalonia/3.1.6": {
         "type": "package",
         "dependencies": {
-          "Avalonia": "11.0.0",
-          "DialogHost.Avalonia": "0.7.5",
-          "Markdown.Avalonia.Tight": "11.0.0-d1"
+          "Avalonia": "11.0.5",
+          "DialogHost.Avalonia": "0.7.7",
+          "Markdown.Avalonia.Tight": "11.0.2"
         },
         "compile": {
           "lib/netstandard2.0/MsBox.Avalonia.dll": {}
@@ -2126,14 +2126,14 @@
         "lib/netstandard2.0/Avalonia.X11.xml"
       ]
     },
-    "ColorTextBlock.Avalonia/11.0.0-d1": {
-      "sha512": "sQAZgCwCS7vT5qGlxivrx6WAb1xkP47p4gAVmv5GQapfW8YXuk9a/t6QLmjJqFTJAAdk8M1EAUde0Ox5HPxjHA==",
+    "ColorTextBlock.Avalonia/11.0.2": {
+      "sha512": "MsWu5aAbDpstAmJ+TTSgC6Q7YdjKB7Na912GMr3oWl9ag8TH2HNpglzgo+kIAuB4C4wswKfrzhso4UcpvgMuHg==",
       "type": "package",
-      "path": "colortextblock.avalonia/11.0.0-d1",
+      "path": "colortextblock.avalonia/11.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "colortextblock.avalonia.11.0.0-d1.nupkg.sha512",
+        "colortextblock.avalonia.11.0.2.nupkg.sha512",
         "colortextblock.avalonia.nuspec",
         "lib/net461/ColorTextBlock.Avalonia.dll",
         "lib/net6.0/ColorTextBlock.Avalonia.dll",
@@ -2141,15 +2141,15 @@
         "lib/netstandard2.0/ColorTextBlock.Avalonia.dll"
       ]
     },
-    "DialogHost.Avalonia/0.7.5": {
-      "sha512": "jpXMSP2dy/K5UY6lclNjVgeqkitT+Vh8Aj4cLD64TShnDoBxfKOqHd8TMaFCkU5fa7hfhysdxZLZN2IrSwUZcw==",
+    "DialogHost.Avalonia/0.7.7": {
+      "sha512": "V5zq0e6dBeK1A8xDsyNouzfSx3d+aOhxPgjguaFyaDexgDF8WiSQDsawkv0fRGKbDnaPIqMk9m7P/2G5c7HPzw==",
       "type": "package",
-      "path": "dialoghost.avalonia/0.7.5",
+      "path": "dialoghost.avalonia/0.7.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "dialoghost.avalonia.0.7.5.nupkg.sha512",
+        "dialoghost.avalonia.0.7.7.nupkg.sha512",
         "dialoghost.avalonia.nuspec",
         "icon.png",
         "lib/netstandard2.0/DialogHost.Avalonia.dll",
@@ -2366,10 +2366,10 @@
         "logo.png"
       ]
     },
-    "Markdown.Avalonia.Tight/11.0.0-d1": {
-      "sha512": "fwl4wrvTdLFLUfkFezRY6SSfPmXIJcRyYChMDiMKFEGo1rKdPMnmcJbK+BWYXxZS+g66E6SFl/ca4kakhTk1HQ==",
+    "Markdown.Avalonia.Tight/11.0.2": {
+      "sha512": "Ylg0EkSUId42dVUFQvU7UJGWcKiJ+g7TesRe/KCzUYzlypWf1lTiVveT2j60QSldCtuAw3o/aEOEjIahMdRGig==",
       "type": "package",
-      "path": "markdown.avalonia.tight/11.0.0-d1",
+      "path": "markdown.avalonia.tight/11.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2378,20 +2378,20 @@
         "lib/net6.0/Markdown.Avalonia.dll",
         "lib/netcoreapp2.0/Markdown.Avalonia.dll",
         "lib/netstandard2.0/Markdown.Avalonia.dll",
-        "markdown.avalonia.tight.11.0.0-d1.nupkg.sha512",
+        "markdown.avalonia.tight.11.0.2.nupkg.sha512",
         "markdown.avalonia.tight.nuspec"
       ]
     },
-    "MessageBox.Avalonia/3.0.0": {
-      "sha512": "xGIiABBLFo4eq6MCR53AGUD/RLWCnOJbonToH2EsE1O30b2Utlddo8mq82Vu8TB2CQmvAklZGsDtzPbONA43cQ==",
+    "MessageBox.Avalonia/3.1.6": {
+      "sha512": "0nkXkFoh2d95HnC+/oeC8wcOMti4z+jmRMjYRw+ulrnFlhGzLURthII6VdZOHpG3m0kP7UWn1lkiDaYvft8TJg==",
       "type": "package",
-      "path": "messagebox.avalonia/3.0.0",
+      "path": "messagebox.avalonia/3.1.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.jpg",
         "lib/netstandard2.0/MsBox.Avalonia.dll",
-        "messagebox.avalonia.3.0.0.nupkg.sha512",
+        "messagebox.avalonia.3.1.6.nupkg.sha512",
         "messagebox.avalonia.nuspec"
       ]
     },
@@ -4675,29 +4675,29 @@
       "Avalonia.Fonts.Inter >= 11.1.0",
       "Avalonia.ReactiveUI >= 11.1.0",
       "Avalonia.Themes.Fluent >= 11.1.0",
-      "MessageBox.Avalonia >= 3.0.0",
+      "MessageBox.Avalonia >= 3.1.6",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\колиниченкоес\\.nuget\\packages\\": {},
+    "C:\\Users\\Katya\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\колиниченкоес\\source\\repos\\LearnSchool\\LernSchool.csproj",
+      "projectUniqueName": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\LernSchool.csproj",
       "projectName": "LernSchool",
-      "projectPath": "C:\\Users\\колиниченкоес\\source\\repos\\LearnSchool\\LernSchool.csproj",
-      "packagesPath": "C:\\Users\\колиниченкоес\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\колиниченкоес\\source\\repos\\LearnSchool\\obj\\",
+      "projectPath": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\LernSchool.csproj",
+      "packagesPath": "C:\\Users\\Katya\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\колиниченкоес\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Katya\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4706,7 +4706,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4724,7 +4723,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -4756,7 +4756,7 @@
           },
           "MessageBox.Avalonia": {
             "target": "Package",
-            "version": "[3.0.0, )"
+            "version": "[3.1.6, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -4785,7 +4785,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

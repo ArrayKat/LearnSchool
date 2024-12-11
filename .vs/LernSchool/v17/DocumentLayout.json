@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u043A\u043E\u043B\u0438\u043D\u0438\u0447\u0435\u043D\u043A\u043E\u0435\u0441\\source\\repos\\LearnSchool\\",
+  "WorkspaceRootPath": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\\u043A\u043E\u043B\u0438\u043D\u0438\u0447\u0435\u043D\u043A\u043E\u0435\u0441\\source\\repos\\learnschool\\views\\showservice.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:views\\showservice.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\\u043A\u043E\u043B\u0438\u043D\u0438\u0447\u0435\u043D\u043A\u043E\u0435\u0441\\source\\repos\\learnschool\\models\\particalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:models\\particalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\\u043A\u043E\u043B\u0438\u043D\u0438\u0447\u0435\u043D\u043A\u043E\u0435\u0441\\source\\repos\\learnschool\\viewmodels\\showservicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katya\\source\\repos\\learnschool\\viewmodels\\showservicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:viewmodels\\showservicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katya\\source\\repos\\learnschool\\views\\addchangeservices.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:views\\addchangeservices.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katya\\source\\repos\\learnschool\\viewmodels\\addchangeservicesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:viewmodels\\addchangeservicesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katya\\source\\repos\\learnschool\\views\\showservice.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:views\\showservice.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +26,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ParticalService.cs",
-              "DocumentMoniker": "C:\\Users\\\u043A\u043E\u043B\u0438\u043D\u0438\u0447\u0435\u043D\u043A\u043E\u0435\u0441\\source\\repos\\LearnSchool\\Models\\ParticalService.cs",
-              "RelativeDocumentMoniker": "Models\\ParticalService.cs",
-              "ToolTip": "C:\\Users\\\u043A\u043E\u043B\u0438\u043D\u0438\u0447\u0435\u043D\u043A\u043E\u0435\u0441\\source\\repos\\LearnSchool\\Models\\ParticalService.cs",
-              "RelativeToolTip": "Models\\ParticalService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T07:35:42.216Z",
+              "Title": "AddChangeServices.axaml",
+              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\Views\\AddChangeServices.axaml",
+              "RelativeDocumentMoniker": "Views\\AddChangeServices.axaml",
+              "ToolTip": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\Views\\AddChangeServices.axaml",
+              "RelativeToolTip": "Views\\AddChangeServices.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-11T18:55:00.649Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ShowServiceVM.cs",
-              "DocumentMoniker": "C:\\Users\\\u043A\u043E\u043B\u0438\u043D\u0438\u0447\u0435\u043D\u043A\u043E\u0435\u0441\\source\\repos\\LearnSchool\\ViewModels\\ShowServiceVM.cs",
-              "RelativeDocumentMoniker": "ViewModels\\ShowServiceVM.cs",
-              "ToolTip": "C:\\Users\\\u043A\u043E\u043B\u0438\u043D\u0438\u0447\u0435\u043D\u043A\u043E\u0435\u0441\\source\\repos\\LearnSchool\\ViewModels\\ShowServiceVM.cs",
-              "RelativeToolTip": "ViewModels\\ShowServiceVM.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAWwGMAAABaAAAAAAAAAA==",
+              "Title": "AddChangeServicesVM.cs",
+              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\ViewModels\\AddChangeServicesVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AddChangeServicesVM.cs",
+              "ToolTip": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\ViewModels\\AddChangeServicesVM.cs",
+              "RelativeToolTip": "ViewModels\\AddChangeServicesVM.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAIwE4AAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T05:45:37.381Z",
+              "WhenOpened": "2024-12-11T18:54:25.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ShowServiceVM.cs",
+              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\ViewModels\\ShowServiceVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ShowServiceVM.cs",
+              "ToolTip": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\ViewModels\\ShowServiceVM.cs",
+              "RelativeToolTip": "ViewModels\\ShowServiceVM.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCoAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T18:50:34.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ShowService.axaml",
-              "DocumentMoniker": "C:\\Users\\\u043A\u043E\u043B\u0438\u043D\u0438\u0447\u0435\u043D\u043A\u043E\u0435\u0441\\source\\repos\\LearnSchool\\Views\\ShowService.axaml",
+              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\Views\\ShowService.axaml",
               "RelativeDocumentMoniker": "Views\\ShowService.axaml",
-              "ToolTip": "C:\\Users\\\u043A\u043E\u043B\u0438\u043D\u0438\u0447\u0435\u043D\u043A\u043E\u0435\u0441\\source\\repos\\LearnSchool\\Views\\ShowService.axaml",
+              "ToolTip": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\Views\\ShowService.axaml",
               "RelativeToolTip": "Views\\ShowService.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-07T13:28:03.691Z",
+              "WhenOpened": "2024-12-11T15:56:52.353Z",
               "EditorCaption": ""
             }
           ]

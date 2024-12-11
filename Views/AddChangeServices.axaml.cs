@@ -12,4 +12,9 @@ public partial class AddChangeServices : UserControl
         InitializeComponent();
         DataContext = new AddChangeServicesVM(id);
     }
+    public AddChangeServices()
+    {
+        InitializeComponent();
+        DataContext = new AddChangeServicesVM();
+    }
 }

@@ -4,6 +4,7 @@ using MsBox.Avalonia.Enums;
 using ReactiveUI;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,12 +17,16 @@ namespace LernSchool.ViewModels
 
         public List<Service> ListServices { get => _listServices; set => this.RaiseAndSetIfChanged(ref _listServices, value); }
 
-
+        int _countListServices;
+        int _countAllServices;
         public ShowServiceVM()
         {
             ListServices = MainWindowViewModel.myConnection.Services.ToList();
+            _countListServices = _listServices.Count;
+            _countAllServices = MainWindowViewModel.myConnection.Services.Count();
         }
-
+        public int CountAllServices { get => _countAllServices; set => this.RaiseAndSetIfChanged(ref _countAllServices, value); }
+        public int CountListServices { get => _countListServices; set => this.RaiseAndSetIfChanged(ref _countListServices, value); }
 
         #region Change, delete
         public async void DeleteService(int idService)
@@ -32,7 +37,7 @@ namespace LernSchool.ViewModels
                 Service deleteService = MainWindowViewModel.myConnection.Services.FirstOrDefault(s => s.Id == idService);
                 List<ClientService> serviceClient = MainWindowViewModel.myConnection.ClientServices.Where(x => x.ServiceId == idService).ToList();
                 //если на услугу никто не записан - список пустой, занчит можно удалять
-                bool isClientRecordedService = serviceClient.Count() != 0 ? true : false;
+                bool isClientRecordedService = serviceClient.Count() != 0 ? false : true;
                 if (isClientRecordedService)
                 {
                     MainWindowViewModel.myConnection.Services.Remove(deleteService);
@@ -47,6 +52,9 @@ namespace LernSchool.ViewModels
         {
             MainWindowViewModel.Instance.PageContent = new AddChangeServices(id);
         }
+        public void AddService() {
+            MainWindowViewModel.Instance.PageContent = new AddChangeServices();
+        }
         #endregion
 
         string _searchNameDesc = "";
@@ -56,14 +64,14 @@ namespace LernSchool.ViewModels
         public int SortCostIndex { get => _sortCostIndex; set { _sortCostIndex = value; AllFilters(); } }
         public int FilterDiscountIndex { get => _filterDiscountIndex; set { this.RaiseAndSetIfChanged(ref _filterDiscountIndex, value); AllFilters(); } }
 
+       
         
-
+        
         void AllFilters()
         {
             //обновляем список сервисов
-            //ListServices = MainWindowViewModel.myConnection.Services.ToList();
-            ListServices.Clear();
             ListServices = MainWindowViewModel.myConnection.Services.ToList();
+            CountAllServices = MainWindowViewModel.myConnection.Services.Count();
             //для поиска по имени и описанию (сработает, если поле ввода не пустое)
             if (!string.IsNullOrEmpty(_searchNameDesc))
             {
@@ -87,7 +95,10 @@ namespace LernSchool.ViewModels
                 case 5: ListServices = ListServices.Where(x => x.DiscountInt >= 70 && x.DiscountInt < 100).ToList(); break;
                 default: ListServices = ListServices.ToList(); break;
             }
+            CountListServices = ListServices.Count();
             
+
+
         }
 
         string _adminCode = "";
@@ -95,9 +106,11 @@ namespace LernSchool.ViewModels
         public string AdminCode { get => _adminCode; set { this.RaiseAndSetIfChanged(ref _adminCode, value); } }
 
         public bool IsVisibleAdmin { get => _isVisibleAdmin; set => this.RaiseAndSetIfChanged(ref _isVisibleAdmin, value); }
+        
+
 
         //public bool CheckAdmin => Convert.ToInt32(_adminCode)==000000 ? false : true;
-        public void CheckAdmin(){ IsVisibleAdmin = AdminCode == "000000" ? true : false; }
+        public void CheckAdmin(){ IsVisibleAdmin = AdminCode == "00000" ? true : false;  }
 
     }
 }

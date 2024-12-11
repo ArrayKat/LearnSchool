@@ -7,14 +7,42 @@
 			 xmlns:vm ="using:LernSchool.ViewModels"
 			 x:DataType="vm:AddChangeServicesVM">
 
-	<StackPanel>
-		<Button Command="{Binding ToBackPage}"/>
-		<TextBlock Text="{Binding CurrentService.Title}"/>
-		<TextBlock Text="{Binding CurrentService.DurationInMinutes}"/>
-		<TextBlock Text="{Binding CurrentService.Cost}"/>
-		<TextBlock Text="{Binding CurrentService.Description}"/>
-		<TextBlock Text="{Binding CurrentService.DiscountInt}"/>
 	
+	<StackPanel>
+		<Button Command="{Binding ToBackPage}" Content="Назад"/>
+		<TextBlock Text="{Binding NamePage}"/>
+		<Border BorderBrush="#04A0FF" BorderThickness="5" Background="#E7FABF">
+			<StackPanel Margin="20">
+				<StackPanel Orientation="Vertical" IsVisible="{Binding IsVisibleId}">
+					<TextBlock Text="id:"/>
+					<TextBox IsEnabled="False"  Text="{Binding CurrentService.Id}"/>
+				</StackPanel>
+				<StackPanel Orientation="Vertical">
+					<TextBlock Text="Title:" FontSize="16" Margin="4"/>
+					<TextBox Text="{Binding CurrentService.Title}"/>
+				</StackPanel>
+				<StackPanel Orientation="Vertical">
+					<TextBlock Text="Стоимость:" FontSize="16" Margin="4"/>
+					<TextBox Text="{Binding CurrentService.Cost}"/>
+				</StackPanel>
+				<StackPanel Orientation="Vertical">
+					<TextBlock Text="Длительность:" FontSize="16" Margin="4"/>
+					<TextBox Text="{Binding CurrentService.DurationInMinutes}"/>
+				</StackPanel>
+				<StackPanel Orientation="Vertical">
+					<TextBlock Text="Описание:" FontSize="16" Margin="4"/>
+					<TextBox Text="{Binding CurrentService.Description}"/>
+				</StackPanel>
+				<StackPanel Orientation="Vertical">
+					<TextBlock Text="Скидка:" FontSize="16" Margin="4"/>
+					<TextBox Text="{Binding CurrentService.Id}"/>
+					<MaskedTextBox Mask="00:00" Text="" AsciiOnly="True"/>
+				</StackPanel>
+				<Button Command="{Binding SaveChange}" Content="Сохранить"/>
+			</StackPanel>
+		</Border>
+		
+		
 	
 	
 	</StackPanel>
