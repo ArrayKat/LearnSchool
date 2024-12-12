@@ -41,7 +41,7 @@
 			</StackPanel>
 
 		</StackPanel>
-		<ListBox Grid.Row="1" ItemsSource="{Binding ListServices}" SelectionMode="Single" >
+		<ListBox Grid.Row="1" ItemsSource="{Binding ListServices}" SelectionMode="Single" SelectedItem="{Binding SelectedService}">
 			<ListBox.ItemTemplate>
 				<DataTemplate>
 					<Border BorderBrush="Blue" BorderThickness="2" Background="{Binding BackgroundColor}">

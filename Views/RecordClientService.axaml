@@ -1,0 +1,36 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LernSchool.RecordClientService"
+			 xmlns:vm ="using:LernSchool.ViewModels"
+			 x:DataType="vm:RecordClientServiceVM">
+	<StackPanel>
+		<TextBlock Text="Услуга:" FontSize="20"/>
+		<TextBlock Text="{Binding CurrentService.Title}"/>
+		<TextBlock Text="{Binding CurrentService.DurationInMinutes}"/>
+		<TextBlock Text="Клиент:" FontSize="20"/>
+		<ComboBox ItemsSource="{Binding ListClients}">
+			<ComboBox.ItemTemplate>
+				<DataTemplate>
+					<TextBlock Text="{Binding FIO}"/>
+				</DataTemplate>
+			</ComboBox.ItemTemplate>
+		</ComboBox>
+		<TextBlock Text="Дата регистрации:" FontSize="20"/>
+		<DatePicker />
+		<MaskedTextBox Mask="00:00" Text="" AsciiOnly="True"/>
+		<Button Content="Расчитать время окончания услуги"/>
+		<StackPanel IsVisible="">
+			<TextBlock>
+				<TextBlock.Text>
+					<MultiBinding StringFormat="{}Время окончания услуги: {0}">
+						<Binding Path=""/>
+					</MultiBinding>
+				</TextBlock.Text>
+			</TextBlock>
+			<Button Content="Сохранить"/>
+		</StackPanel>
+	</StackPanel>
+</UserControl>

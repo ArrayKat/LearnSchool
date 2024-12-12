@@ -29,6 +29,7 @@ namespace LernSchool.ViewModels
         public int CountListServices { get => _countListServices; set => this.RaiseAndSetIfChanged(ref _countListServices, value); }
 
         #region Change, delete
+
         public async void DeleteService(int idService)
         {
             ButtonResult result = await MessageBoxManager.GetMessageBoxStandard("Сообщение", "Хотите удалить данную услугу?", ButtonEnum.YesNo).ShowAsync();
@@ -52,11 +53,13 @@ namespace LernSchool.ViewModels
         {
             MainWindowViewModel.Instance.PageContent = new AddChangeServices(id);
         }
-        public void AddService() {
+        public void AddService()
+        {
             MainWindowViewModel.Instance.PageContent = new AddChangeServices();
         }
         #endregion
 
+        #region Search, filter, admin mode
         string _searchNameDesc = "";
         int _sortCostIndex = 0;
         int _filterDiscountIndex = 0;
@@ -64,9 +67,9 @@ namespace LernSchool.ViewModels
         public int SortCostIndex { get => _sortCostIndex; set { _sortCostIndex = value; AllFilters(); } }
         public int FilterDiscountIndex { get => _filterDiscountIndex; set { this.RaiseAndSetIfChanged(ref _filterDiscountIndex, value); AllFilters(); } }
 
-       
-        
-        
+
+
+
         void AllFilters()
         {
             //обновляем список сервисов
@@ -96,7 +99,7 @@ namespace LernSchool.ViewModels
                 default: ListServices = ListServices.ToList(); break;
             }
             CountListServices = ListServices.Count();
-            
+
 
 
         }
@@ -106,11 +109,21 @@ namespace LernSchool.ViewModels
         public string AdminCode { get => _adminCode; set { this.RaiseAndSetIfChanged(ref _adminCode, value); } }
 
         public bool IsVisibleAdmin { get => _isVisibleAdmin; set => this.RaiseAndSetIfChanged(ref _isVisibleAdmin, value); }
-        
+
+
 
 
         //public bool CheckAdmin => Convert.ToInt32(_adminCode)==000000 ? false : true;
-        public void CheckAdmin(){ IsVisibleAdmin = AdminCode == "00000" ? true : false;  }
+        public void CheckAdmin() { IsVisibleAdmin = AdminCode == "00000" ? true : false; }
+
+        #endregion
+
+        Service _selectedService;
+        public Service SelectedService { get => _selectedService; set { this.RaiseAndSetIfChanged(ref _selectedService, value); ToRecordClientService(); } }
+
+        public void ToRecordClientService() {
+            MainWindowViewModel.Instance.PageContent = new RecordClientService(_selectedService);
+        }
 
     }
 }

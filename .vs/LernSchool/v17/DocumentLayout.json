@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katya\\source\\repos\\learnschool\\viewmodels\\showservicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:viewmodels\\showservicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katya\\source\\repos\\learnschool\\views\\recordclientservice.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:views\\recordclientservice.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katya\\source\\repos\\learnschool\\views\\addchangeservices.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:views\\addchangeservices.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katya\\source\\repos\\learnschool\\viewmodels\\addchangeservicesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:viewmodels\\addchangeservicesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katya\\source\\repos\\learnschool\\views\\showservice.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:views\\showservice.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|c:\\users\\katya\\source\\repos\\learnschool\\viewmodels\\recordclientservicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F77D03-5C57-4C88-83B6-51C6E3E509B7}|LernSchool.csproj|solutionrelative:viewmodels\\recordclientservicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,51 +43,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AddChangeServices.axaml",
-              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\Views\\AddChangeServices.axaml",
-              "RelativeDocumentMoniker": "Views\\AddChangeServices.axaml",
-              "ToolTip": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\Views\\AddChangeServices.axaml",
-              "RelativeToolTip": "Views\\AddChangeServices.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-11T18:55:00.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddChangeServicesVM.cs",
-              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\ViewModels\\AddChangeServicesVM.cs",
-              "RelativeDocumentMoniker": "ViewModels\\AddChangeServicesVM.cs",
-              "ToolTip": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\ViewModels\\AddChangeServicesVM.cs",
-              "RelativeToolTip": "ViewModels\\AddChangeServicesVM.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAIwE4AAABRAAAAAAAAAA==",
+              "Title": "RecordClientServiceVM.cs",
+              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\ViewModels\\RecordClientServiceVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RecordClientServiceVM.cs",
+              "ToolTip": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\ViewModels\\RecordClientServiceVM.cs",
+              "RelativeToolTip": "ViewModels\\RecordClientServiceVM.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T18:54:25.269Z",
+              "WhenOpened": "2024-12-12T09:17:36.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ShowServiceVM.cs",
-              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\ViewModels\\ShowServiceVM.cs",
-              "RelativeDocumentMoniker": "ViewModels\\ShowServiceVM.cs",
-              "ToolTip": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\ViewModels\\ShowServiceVM.cs",
-              "RelativeToolTip": "ViewModels\\ShowServiceVM.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCoAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T18:50:34.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ShowService.axaml",
-              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\Views\\ShowService.axaml",
-              "RelativeDocumentMoniker": "Views\\ShowService.axaml",
-              "ToolTip": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\Views\\ShowService.axaml",
-              "RelativeToolTip": "Views\\ShowService.axaml",
+              "Title": "RecordClientService.axaml",
+              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\Views\\RecordClientService.axaml",
+              "RelativeDocumentMoniker": "Views\\RecordClientService.axaml",
+              "ToolTip": "C:\\Users\\Katya\\source\\repos\\LearnSchool\\Views\\RecordClientService.axaml",
+              "RelativeToolTip": "Views\\RecordClientService.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-11T15:56:52.353Z",
+              "WhenOpened": "2024-12-12T09:13:13.974Z",
               "EditorCaption": ""
             }
           ]

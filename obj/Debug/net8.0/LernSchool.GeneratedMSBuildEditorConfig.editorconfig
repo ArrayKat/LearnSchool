@@ -38,5 +38,8 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/Katya/source/repos/LearnSchool/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/Katya/source/repos/LearnSchool/Views/RecordClientService.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/Katya/source/repos/LearnSchool/Views/ShowService.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
