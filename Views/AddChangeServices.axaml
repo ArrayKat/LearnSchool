@@ -5,14 +5,22 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="LernSchool.AddChangeServices"
 			 xmlns:vm ="using:LernSchool.ViewModels"
-			 x:DataType="vm:AddChangeServicesVM">
+			 x:DataType="vm:AddChangeServicesVM"
+			 xmlns:image ="using:LernSchool.Converters">
 
+	<UserControl.Resources>
+		<image:ImageConvertor x:Key="ImageConverter"></image:ImageConvertor>
+	</UserControl.Resources>
 	
 	<StackPanel>
 		<Button Command="{Binding ToBackPage}" Content="Назад"/>
 		<TextBlock Text="{Binding NamePage}"/>
+		
 		<Border BorderBrush="#04A0FF" BorderThickness="5" Background="#E7FABF">
+
+			
 			<StackPanel Margin="20">
+				<Image Height="300" Width="300" Source="{Binding CurrentService.MainImagePath, Converter={StaticResource ImageConverter}}" Margin="5"></Image>
 				<StackPanel Orientation="Vertical" IsVisible="{Binding IsVisibleId}">
 					<TextBlock Text="id:"/>
 					<TextBox IsEnabled="False"  Text="{Binding CurrentService.Id}"/>

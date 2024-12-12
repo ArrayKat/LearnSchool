@@ -12,11 +12,11 @@ namespace LernSchool.ViewModels
     {
         Service currentService;
         List<Client> _listClients;
-        string time = "";
+        int time = 0;
         public Service CurrentService => currentService;
 
         public List<Client> ListClients { get => _listClients; set =>this.RaiseAndSetIfChanged(ref _listClients, value); }
-        public string Time { get => time; set =>this.RaiseAndSetIfChanged(ref time, value); }
+        public int Time { get => time; set =>this.RaiseAndSetIfChanged(ref time, value); }
 
         public RecordClientServiceVM(Service service) { 
             currentService = service;
@@ -24,7 +24,7 @@ namespace LernSchool.ViewModels
         }
 
         public void CheckData() { 
-            
+            int str = Time;
         }
     }
 }

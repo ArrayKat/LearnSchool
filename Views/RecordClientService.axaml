@@ -20,8 +20,8 @@
 		</ComboBox>
 		<TextBlock Text="Дата регистрации:" FontSize="20"/>
 		<DatePicker />
-		<MaskedTextBox Mask="00:00" Text="" AsciiOnly="True"/>
-		<Button Content="Расчитать время окончания услуги"/>
+		<MaskedTextBox Mask="00:00" Text="{Binding Time}" AsciiOnly="True"/>
+		<Button Content="Расчитать время окончания услуги" Command="{Binding CheckData}"/>
 		<StackPanel IsVisible="">
 			<TextBlock>
 				<TextBlock.Text>
